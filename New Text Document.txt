@@ -1,0 +1,53 @@
+1/ voyelle
+
+
+
+fun nbr-voy (ch:chaine ) : entier 
+s:= 0
+pour i de 1 a long (ch) faire
+si majus (ch [i] )dans [E,Y,A,O,U,I] alos
+s:= s+1
+fin si fin pour 
+nbr-voy:= s
+fin nbr-voy
+
+
+
+
+
+2/ long ch
+
+
+function nombre-caractere (ch:chaine): entier 
+s:= 0 
+pour i de 1 a long ch faire 
+s:=s+1
+fin pour 
+ nombre-caractere := s
+fin nombre-caractere
+
+
+
+
+3/ nmbre de mot
+
+
+fun nbr-mot ( ch : chaine ):entier
+ch:= ch+""
+s:=0
+
+repeter
+si long ch<>0 alors 
+si position ( "",ch)>1 alors
+s:=s+1
+efface ( ch , 1 , position ("",ch) )
+jusqu a ( long (ch)=0
+fin si 
+fin si
+nbr-mot := s
+fin nbr-mot
+
+
+
+
+
